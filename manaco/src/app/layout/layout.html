@@ -1,18 +1,28 @@
-<body>
-  <header>
-    <h1>Mi Sitio Web</h1>
-    <nav>
-      <ul>
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/acerca">Acerca de</a></li>
-        <li><a href="/contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+<nav class="navbar">
+<div class="container">
+<div class="logo">
+<img src="assets/logo-manaco.png" alt="MANACO" />
+<span>MANACO</span>
+</div>
+<ul class="nav-links">
+<li><a routerLink="/home" routerLinkActive="active">Inicio</a></li>
+<li><a href="#productos">Productos</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</div>
+</nav>
+</header>
 
-  <main> <router-outlet> </router-outlet> </main>
 
-  <footer>
-    <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
-  </footer>
-</body>
+<main>
+<router-outlet></router-outlet>
+</main>
+
+
+<footer>
+<div class="footer-container">
+<p>&copy; 2025 MANACO · Todos los derechos reservados</p>
+<p>Contacto: <a href="mailto:info@manaco.com">info@manaco.com</a> | Tel: 72571096</p>
+</div>
+</footer>
